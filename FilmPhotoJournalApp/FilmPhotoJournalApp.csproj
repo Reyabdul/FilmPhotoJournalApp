@@ -190,6 +190,10 @@
     <Compile Include="Migrations\202306141839037_InitialCreate.Designer.cs">
       <DependentUpon>202306141839037_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306141932070_photos.cs" />
+    <Compile Include="Migrations\202306141932070_photos.Designer.cs">
+      <DependentUpon>202306141932070_photos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -274,6 +278,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202306141839037_InitialCreate.resx">
       <DependentUpon>202306141839037_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306141932070_photos.resx">
+      <DependentUpon>202306141932070_photos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
