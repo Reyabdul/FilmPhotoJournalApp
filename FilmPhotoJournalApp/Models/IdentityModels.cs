@@ -40,6 +40,8 @@ namespace FilmPhotoJournalApp.Models
         //Add 'photo' entity into the system
         public DbSet<Photo> Photos { get; set; }    //DbSet naming convention - DB<Class(singular)> Class(plural)
 
+        public DbSet<Collection> Collections { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

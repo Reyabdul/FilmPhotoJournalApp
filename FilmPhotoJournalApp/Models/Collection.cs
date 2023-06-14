@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-//must declare when using [Key]
 using System.ComponentModel.DataAnnotations;
 
 /*
@@ -14,13 +13,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FilmPhotoJournalApp.Models
 {
-    public class Photo
+    public class Collection
     {
-        //Properties
-        [Key]   //annotates the column below as the 'primary key'
-        public int PhotoID { get; set; }
-        public int Iso { get; set; }
+        public int CollectionID { get; set; }
+        public string CollectionTitle { get; set; }
 
-        //Todo: av, ss, notes, data, datetaken,image
     }
 }

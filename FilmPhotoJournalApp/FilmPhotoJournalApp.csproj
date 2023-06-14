@@ -194,8 +194,13 @@
     <Compile Include="Migrations\202306141932070_photos.Designer.cs">
       <DependentUpon>202306141932070_photos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306141949433_collections.cs" />
+    <Compile Include="Migrations\202306141949433_collections.Designer.cs">
+      <DependentUpon>202306141949433_collections.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Collection.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Photo.cs" />
@@ -281,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306141932070_photos.resx">
       <DependentUpon>202306141932070_photos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306141949433_collections.resx">
+      <DependentUpon>202306141949433_collections.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
