@@ -202,9 +202,14 @@
     <Compile Include="Migrations\202306142007061_photo-collection.Designer.cs">
       <DependentUpon>202306142007061_photo-collection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306142119059_films-collections.cs" />
+    <Compile Include="Migrations\202306142119059_films-collections.Designer.cs">
+      <DependentUpon>202306142119059_films-collections.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Collection.cs" />
+    <Compile Include="Models\Film.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Photo.cs" />
@@ -296,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306142007061_photo-collection.resx">
       <DependentUpon>202306142007061_photo-collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306142119059_films-collections.resx">
+      <DependentUpon>202306142119059_films-collections.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

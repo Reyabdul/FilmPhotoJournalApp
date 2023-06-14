@@ -18,5 +18,8 @@ namespace FilmPhotoJournalApp.Models
         public int CollectionID { get; set; }
         public string CollectionTitle { get; set; }
 
+        //a 'collection' can be part of many 'film' 
+        public ICollection<Film> Films { get; set; }
+
     }
 }
