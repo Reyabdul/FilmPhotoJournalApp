@@ -4,12 +4,17 @@ using System.Linq;
 using System.Web;
 //must declare when using [Key]
 using System.ComponentModel.DataAnnotations;
+//must declare when using [ForenignKey]
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 /*
  ----------------------NOTES-------------
 -after creating a class, create DbSet in IdentityModels.cs to push data into the database
 -after creating the DbSets, migration, and pushing into the database, can update properties futher
 -can create other Models or foreign keys
+-when promted with red squiggly line, pressing 'alt+enter' wil display a recommended solution
+    
 */
 
 namespace FilmPhotoJournalApp.Models
@@ -22,5 +27,19 @@ namespace FilmPhotoJournalApp.Models
         public int Iso { get; set; }
 
         //Todo: av, ss, notes, data, datetaken,image
+
+
+
+
+        //--------Foreign Keys---------------  
+
+        //A photo belongs to one collection
+        //A collection can ahve many photos
+        [ForeignKey("Collection")] //can be explicit and declare where foreign key is referencing from by add ("").
+        public int CollectionID { get; set; }
+
+        //if error occurs when updating database, it might be the cause of having existing values in the table, clear them and it should resolve the issue
+        public virtual Collection Collection { get; set; } //error may occur when creating migration that connects photo and collections (e.g.:photo-collection). This is sometimes do to Entity requiring to be more explicit when describing a naviagation proprty(should be okay in other databases)
+
     }
 }
