@@ -1,0 +1,6 @@
+﻿//if updating, make sure id in curl request or url is the same as the id indicated below (e.g.photoID: 8 should be 'https://localhost:44350/api/photodata/updatephoto/8'
+{
+  "PhotoID": "8",
+  "Iso":800,
+  "CollectionID":1 
+}
