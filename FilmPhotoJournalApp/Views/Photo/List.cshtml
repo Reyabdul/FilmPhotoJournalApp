@@ -1,0 +1,18 @@
+﻿@model IEnumerable<FilmPhotoJournalApp.Models.PhotoDto>
+
+<!--
+NOTES:
+-make sure to use 'at' symbol when using c# syntax code (as seen in the 'foreach' command and 'photo.photoID')    
+-->
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach(var photo in Model) 
+{ 
+    <h2><a href="/Photo/Details/@photo.PhotoID">@photo.PhotoID</a></h2> //link to animal detail
+    <div>ISO:@photo.Iso</div>
+    <div>COLLECTION Title: @photo.CollectionTitle</div>
+}

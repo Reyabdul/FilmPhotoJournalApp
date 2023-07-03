@@ -1,0 +1,17 @@
+﻿@model FilmPhotoJournalApp.Models.PhotoDto
+
+<!--
+NOTES:
+    -can test if page works going to https://localhost{port}/photo/details/{id}
+    -always check if page and its links work
+-->
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<a href="/Photo/List">Go back to list</a> <!--Links back to list-->
+<h2>@Model.PhotoID</h2>
+<div>ISO: @Model.Iso</div>
+<div>Collection: @Model.CollectionTitle</div>
+

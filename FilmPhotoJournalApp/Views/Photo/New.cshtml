@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add New Photo</h2>
+<form action="/Photo/Create" method="POST">
+    <div>
+        <lablel>ISO:</lablel><input type="number" name="iso" />
+    </div>
+    <div>
+        <lablel>Collection:</lablel><input type="number" name="CollectionID" />
+    </div>
+    <div>
+        <input type="submit" value="Add Photo" />
+    </div>
+</form>
+
